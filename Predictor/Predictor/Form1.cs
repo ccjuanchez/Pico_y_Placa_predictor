@@ -19,7 +19,11 @@ namespace Predictor
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            pico_y_placa pp = new pico_y_placa(textBox1.Text, textBox2.Text, textBox3.Text);
+            if (pp.can_be_on_the_road())
+                label5.Text = "Result: \nFree to drive";
+            else
+                label5.Text = "Result: \n Cannot drive!";
         }
        
     }
