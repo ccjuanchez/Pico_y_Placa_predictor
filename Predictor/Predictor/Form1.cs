@@ -23,7 +23,7 @@ namespace Predictor
             if (pp.can_be_on_the_road())
                 label5.Text = "Result: \nFree to drive";
             else
-                label5.Text = "Result: \n Cannot drive!";
+                label5.Text = "Result: \nCannot drive!";
         }
        
     }
